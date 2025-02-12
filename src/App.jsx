@@ -1,18 +1,17 @@
-import './App.css';
+import './styles/App.css';
 import React from 'react';
-import Header from  "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
-import Primary from "./Primary";
+import Header from  "./components/Header";
+import Footer from "./components/Footer";
+import Primary from "./components/Primary";
 
 function App() {
 
   return (
-    <>
+    <div className='app-container'>
       <Header />
       <Primary />
       <Footer />
-    </>
+    </div>
   )
 }
 
