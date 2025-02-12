@@ -5,7 +5,7 @@ function Nav() {
 
   return (
     <>
-      <nav className='navbar'>
+      <nav>
         <ul className='nav-links'>
           <li><a href="/">HOME</a></li>
           <li><a href="/about">ABOUT</a></li>
