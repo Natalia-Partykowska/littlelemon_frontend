@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", Helvetica, sans-serif;
+}
+
+
+.app-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+}
+
+
+.logo {
+  width: 200px;
+}
+
+@media(min-width:771px){
+  .nav-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    gap: 25px;
+    flex-grow: 1;
+  }
+}
+@media(max-width:770px){
+  .nav-links{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+
+.nav-links a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-wrap: nowrap;
+  color: black;
+}
+
+.nav-links button{
+  font-size: 16px;
+  font-weight: bold;
+  text-wrap: nowrap;
+  color: white;
+  background-color: #495E57;
+  width: 136px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+main {
+  grid-row: 2;
+  width: 100%;
+}
+
+.hero-container{
+  background-color: #495E57;
+  display: flex;
+  padding-top: 56px;
+  gap: 53px;
+  margin-top: 24px;
+}
+
+.hero-container h1{
+  color: #F4CE14;
+  font-family: 'Markazi Text';
+  font-size: 64px;
+  font-weight: lighter;
+  margin-top: -18px;
+}
+
+.hero-container h2{
+  color: white;
+  font-family: 'Markazi Text';
+  font-size: 40px;
+  font-weight: lighter;
+  margin-top: -10px;
+}
+
+.hero-container p{
+  color: white;
+  font-size: 18px;
+  margin: 20px 0px 40px 0px;
+  font-weight: lighter;
+}
+
+.hero-container img{
+  object-fit: cover;
+  height: 350px;
+  width: 350px;
+  border-radius: 16px;
+}
+
+.button-container{
+  display: flex;
+  gap: 25px;
+}
+
+.button{
+  color: black;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 18px 14px 18px;
+  font-size: 24px;
+  text-wrap: nowrap;
+}
+
+footer {
+  grid-row: 3;
+  grid-column: 1 / -1;
+  background-color: blueviolet;
+  width: 100%;
+}
