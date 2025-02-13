@@ -1,5 +1,6 @@
 import React from 'react';
 import image7 from "../png/image7.png";
+import { Link } from 'react-router-dom';
 
 
 function Footer() {
@@ -12,14 +13,14 @@ function Footer() {
           <div className='footer-text-container'>
             <div className='footer-text'>
               <h3>Doormat Navigation</h3>
-              <ul className='footer-links'>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/menu">Menu</a></li>
-                <li><a href="/reservations">Reservations</a></li>
-                <li><a href="/order-online">Order online</a></li>
-                <li><a href="/login">Login</a></li>
-              </ul>
+              <div className='footer-links'>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/menu">Menu</Link>
+                <Link to="/reservations">Reservations</Link>
+                <Link to="/order-online">Order Online</Link>
+                <Link to="/login">Login</Link>
+              </div>
             </div>
             <div className='footer-text'>
               <h3>Contacts</h3>

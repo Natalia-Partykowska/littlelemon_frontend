@@ -5,7 +5,7 @@ import Testimonials from "./Testimonials";
 import About from "./About";
 
 
-function Primary() {
+function Home() {
 
   return (
     <>
@@ -19,4 +19,4 @@ function Primary() {
   )
 }
 
-export default Primary;
+export default Home;

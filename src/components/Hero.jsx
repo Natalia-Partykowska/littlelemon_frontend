@@ -1,6 +1,6 @@
 import React from 'react';
 import image1 from "../png/image1.jpg";
-
+import { Link } from 'react-router-dom';
 
 function Hero() {
 
@@ -13,8 +13,8 @@ function Hero() {
             <h2>Chicago</h2>
             <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
             <div className='button-container'>
-              <button className='button'>Reserve a table</button>
-              <button className='button'>View reservations</button>
+              <Link to="/reserve-table"><button className='button'>Reserve a table</button></Link>
+              <Link to="/reservations"><button className='button'>View reservations</button></Link>
             </div>
           </div>
           <div>
