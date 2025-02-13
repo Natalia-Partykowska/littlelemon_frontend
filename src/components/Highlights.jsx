@@ -2,7 +2,7 @@ import React from 'react';
 import image2 from "../png/image2.jpg";
 import image3 from "../png/image3.jpg";
 import image4 from "../png/image4.jpg";
-
+import { Link } from 'react-router-dom';
 
 function Highlights() {
 
@@ -12,7 +12,7 @@ function Highlights() {
         <div className='highlights-items-container'>
           <div className='specials-name'>
             <h1>Specials</h1>
-            <button className='button'>Menu</button>
+            <Link to="/menu"><button className='button'>Menu</button></Link>
           </div>
           <div className='specials-container'>
             <div className='special'>

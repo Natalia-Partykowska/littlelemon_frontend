@@ -19,6 +19,8 @@ header {
   top: 0;
   background-color: white;
   width: 100vw;
+  margin-bottom: 24px;
+  z-index: 1000;
 }
 
 .nav-container{
@@ -46,7 +48,7 @@ header {
 
 
 
-.nav-links a{
+.nav-item{
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -54,7 +56,7 @@ header {
   color: black;
 }
 
-.nav-links button{
+.nav-item button{
   font-size: 16px;
   font-weight: bold;
   text-wrap: nowrap;
@@ -66,6 +68,14 @@ header {
   border-radius: 8px;
 }
 
+.nav-item button:hover{
+  background-color: #34443f;
+}
+
+.nav-item button:active{
+  background-color: #25302d;
+}
+
 
 main {
   grid-row: 2;
@@ -75,7 +85,6 @@ main {
 .hero-container{
   background-color: #495E57;
   width: 100vw;
-  margin-top: 24px;
 }
 
 .hero-items-container{
@@ -135,6 +144,16 @@ main {
   padding: 14px 18px 14px 18px;
   font-size: 24px;
   text-wrap: nowrap;
+}
+
+.button:hover{
+  background-color: #b99d0f;
+  color: black;
+}
+
+.button:active{
+  background-color: #826e0b;
+  color: black;
 }
 
 .highlights-container{

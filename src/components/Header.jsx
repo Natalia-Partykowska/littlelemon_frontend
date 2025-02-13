@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from "./Nav";
 import logo from "../png/logo.png";
-
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -9,7 +9,7 @@ function Header() {
     <>
       <header>
         <div className='nav-container'>
-          <img className='logo' src={logo} alt="Little Lemon Logo" />
+          <Link to="/"><img className='logo' src={logo} alt="Little Lemon Logo" /></Link>
           <Nav />
         </div>
       </header>
