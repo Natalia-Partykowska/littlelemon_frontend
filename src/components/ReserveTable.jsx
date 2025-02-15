@@ -1,11 +1,17 @@
 import React from 'react';
+import BookingForm from './BookingForm';
+import UserForm from './UserForm';
+import { Link } from 'react-router-dom';
 
 function ReserveTable() {
 
   return (
-    <>
-      <h1>Reserve Table here!!</h1>
-    </>
+    <div className='reserve-table-container'>
+      <h1 className='reservation-header-container'>Reservation details</h1>
+      <BookingForm />
+      <UserForm />
+      <Link><button className='button'>Reserve a table</button></Link>
+    </div>
   )
 }
 

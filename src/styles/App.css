@@ -339,6 +339,132 @@ main {
   z-index: -1;
 }
 
+.reservation-header-container{
+  max-width: 860px;
+  margin: 0 auto;
+  font-family: "Markazi Text";
+  font-size: 48px;
+  font-weight: lighter;
+  padding-bottom: 16px;
+}
+
+.day-container{
+  background-color: #EDEFEE;
+  padding: 30px 0px;
+}
+
+.day-items-container{
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+    "date-month"
+    "days";
+  row-gap: 30px;
+}
+
+.h3-header{
+  font-size: 24px;
+}
+
+.month{
+  color: #8D8D8D;
+}
+
+.date-month{
+  grid-area: date-month;
+  display: flex;
+  justify-content: space-between;
+}
+
+.days{
+  grid-area: days;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 19px;
+}
+
+.day{
+  background-color: #495E57;
+  border: none;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.day p{
+  font-size: 12px;
+  color: white;
+}
+
+.day h4{
+  font-size: 20px;
+  color: white;
+}
+
+.time-container{
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "time-slots";
+}
+
+.available-slots{
+  grid-area: header;
+}
+
+.time-slots{
+  grid-area: time-slots;
+  display: grid;
+  gap: 28px;
+}
+
+.time-slot{
+  background-color: #EDEFEE;
+  width: 82px;
+  height: 24px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.user-form-container{
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.user-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.label{
+  font-size: 18px;
+}
+
+.input{
+  background-color: #EDEFEE;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 8px 0 32px 0;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.notes{
+  height: 145px;
+  padding: 20px;
+  resize: none;
+}
+
 footer {
   grid-row: 3;
   grid-column: 1 / -1;
